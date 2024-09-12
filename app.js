@@ -6,12 +6,22 @@ document.addEventListener('DOMContentLoaded', () => {
   let gameState = false;
 
   //game loop
-  document.addEventListener('keydown', control);
+  document.addEventListener('keyup', control);
   birbMovement();
 
   function control(k) {
     if (k.code === 'Space') {
       console.log('FlyJump');
+      let timeout = 10;
+      let timerId = setInterval(function () {
+        if (timeout === 0) {
+          clearInterval(timerId);
+        }
+
+        position += 6;
+        timeout--;
+        birb.style.bottom += position + 'px';
+      }, 5);
     }
   }
 
@@ -23,6 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
       birb.style.bottom = position + 'px';
     }, 20);
   }
-
-  function flyJump() {}
 });
