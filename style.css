@@ -1,4 +1,22 @@
 #background {
   position: absolute;
-  background-color: lightgreen;
+  background-color: lightblue;
+  height: 500px;
+  width: 300px;
+}
+
+#birb {
+  position: absolute;
+  bottom: 250px;
+  background-color: brown;
+  height: 60px;
+  width: 60px;
+}
+
+#pipes {
+  position: absolute;
+  background-color: rgb(88, 137, 15);
+  height: 100px;
+  width: 60px;
+  right: 100px;
 }
