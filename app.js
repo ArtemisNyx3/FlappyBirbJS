@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const birb = document.getElementById('birb');
   const score = document.getElementById('score');
   let position = 250;
-  const gravity = 2;
+  const gravity = 1;
   let gameState = false;
 
   //game loop
@@ -12,16 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
   function control(k) {
     if (k.code === 'Space') {
       console.log('FlyJump');
-      let timeout = 10;
+      let timeout = 25;
       let timerId = setInterval(function () {
         if (timeout === 0) {
           clearInterval(timerId);
         }
 
-        position += 6;
+        position += 3;
         timeout--;
         birb.style.bottom += position + 'px';
-      }, 5);
+      }, 2);
     }
   }
 
@@ -31,6 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
       //console.log(position);
       position -= gravity;
       birb.style.bottom = position + 'px';
-    }, 20);
+    }, 2);
   }
 });
