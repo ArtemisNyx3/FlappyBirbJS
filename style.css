@@ -1,11 +1,14 @@
-#background {
+.game_window {
   position: absolute;
   background-color: lightblue;
   height: 600px;
   width: 400px;
+  left: 550px;
+  top: 75px;
+  border-radius: 10px;
 }
 
-#birb {
+.birb {
   position: absolute;
   bottom: 250px;
   right: 300px;
@@ -14,7 +17,7 @@
   width: 30px;
 }
 
-#pipes {
+.pipes {
   position: absolute;
   background-color: rgb(88, 137, 15);
   width: 60px;
