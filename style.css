@@ -6,6 +6,9 @@
   left: 550px;
   top: 75px;
   border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+  /* horizonataloffset verticalosffset blur-radius spread(offset of the blur)  inset*/
+  /* realnumber realnumber wholenumber */
 }
 
 .birb {
