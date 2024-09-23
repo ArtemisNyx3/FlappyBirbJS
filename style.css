@@ -5,7 +5,7 @@
   height: 600px;
   width: 400px;
   position: absolute;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
   top: 50%;
   left: 50%;
@@ -40,4 +40,43 @@ body {
   text-shadow: 5px 5px rgba(0, 0, 0, 0.784);
   left: 50%;
   transform: translate(0%, -20%);
+}
+
+.titleScreen {
+  background-color: rgb(107, 136, 145);
+  height: 600px;
+  width: 400px;
+  position: absolute;
+  /* border-radius: 10px; */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.startbtn {
+  background-color: rgb(221, 102, 162);
+  color: white;
+  border: none;
+  transition: 250ms;
+  width: 150px;
+  height: 50px;
+
+  /* Font */
+  font-family: 'Micro 5', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 40px;
+
+  /* center the div */
+  position: fixed;
+  inset: 0px;
+  width: 12rem;
+  height: 5rem;
+  max-width: 100vw;
+  max-height: 100dvh;
+  margin: auto;
+}
+.startbtn:hover {
+  transform: translateY(-10px);
 }
