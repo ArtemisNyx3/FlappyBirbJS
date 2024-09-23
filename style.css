@@ -1,18 +1,19 @@
 .game_window {
-  position: absolute;
   background-color: lightblue;
   height: 600px;
   width: 400px;
-  left: 550px;
-  top: 75px;
+  /* left: 550px;
+  top: 75px; */
+  position: absolute;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
-  /* horizonataloffset verticalosffset blur-radius spread(offset of the blur)  inset*/
-  /* realnumber realnumber wholenumber */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .birb {
-  position: absolute;
+  position: relative;
   bottom: 250px;
   right: 300px;
   background-color: brown;
@@ -21,7 +22,16 @@
 }
 
 .pipes {
-  position: absolute;
+  position: relative;
   background-color: rgb(88, 137, 15);
   width: 60px;
+}
+
+body {
+  background-color: rgb(73, 68, 68);
+}
+
+.title {
+  text-align: center;
+  color: aliceblue;
 }
