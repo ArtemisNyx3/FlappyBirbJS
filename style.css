@@ -13,17 +13,14 @@
 }
 
 .birb {
-  position: relative;
+  position: absolute;
   background-color: rgb(159, 159, 35);
-  height: 45px;
-  width: 45px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 50px;
 }
 
 .pipes {
-  position: relative;
+  position: absolute;
   background-color: rgb(88, 137, 15);
   width: 60px;
 }
@@ -40,4 +37,6 @@ body {
   font-style: normal;
   font-size: 40px;
   text-shadow: 5px 5px rgba(0, 0, 0, 0.784);
+  left: 50%;
+  transform: translate(0%, -20%);
 }
