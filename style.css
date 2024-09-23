@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Pixelify+Sans:wght@550&display=swap');
 .game_window {
   background-color: lightblue;
   height: 600px;
@@ -34,4 +35,8 @@ body {
 .title {
   text-align: center;
   color: aliceblue;
+  font-family: 'Micro 5', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
 }
