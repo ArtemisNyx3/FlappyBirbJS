@@ -78,9 +78,20 @@ body {
   transform: translateY(-8px);
   color: white;
 
+  will-change: transform;
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
   /* Font */
   font-family: 'Micro 5', sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 40px;
+}
+
+.startbtn:hover .btnfront {
+  transform: translateY(-12px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+.startbtn:active .btnfront {
+  transform: translateY(-2px);
+  transition: transform 34ms;
 }
