@@ -1,3 +1,3 @@
 # FlappyBirdJS
 
-This is project is an excuse to practice vanilla CSS and JS fundamentals.
+This is project is to practice vanilla CSS and JS fundamentals.
