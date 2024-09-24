@@ -1,4 +1,5 @@
 import { Game } from './game.js';
+import { Birb } from './birb.js';
 
 window.addEventListener('load', function () {
   document.body.style.visibility = 'visible';
@@ -12,4 +13,10 @@ window.addEventListener('load', function () {
     console.log('Start Game');
     game.init();
   };
+
+  // function animate() {
+  //   game.draw();
+  //   requestAnimationFrame(animate);
+  // }
+  // animate();
 });
