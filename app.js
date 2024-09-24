@@ -17,9 +17,12 @@ window.addEventListener('load', function () {
   function animate() {
     console.log('Animate');
     if (game.state === GameState.GAME) {
+      game.ctx.clearRect(0, 0, game.width, game.height);
+      game.update();
       game.draw();
       requestAnimationFrame(animate);
     }
   }
-  const animateInterval = setInterval(animate, 16.667);
+
+  const animateInterval = setInterval(animate, 1000 / 60);
 });

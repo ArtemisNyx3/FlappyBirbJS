@@ -18,7 +18,9 @@ export class Game {
     document.body.removeChild(startbtn);
     console.log(this);
   }
-  update() {}
+  update() {
+    this.birb.update();
+  }
   draw() {
     this.birb.draw();
   }
