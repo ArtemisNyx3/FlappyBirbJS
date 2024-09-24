@@ -4,18 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flappy Bird JS</title>
-    <script src="app.js"></script>
-
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body style="visibility: hidden">
     <!-- Game -->
     <h1 class="title">FLAPPY BIRB</h1>
-    <div class="container">
-      <canvas class="gameWindow"></canvas>
-      <button class="startbtn">
-        <span class="btnfront" onclick="gameStart()"> START &#9658;</span>
-      </button>
-    </div>
+
+    <canvas class="gameWindow"></canvas>
+    <button id="startbtn" class="startbtn">
+      <span class="btnfront"> START &#9658;</span>
+    </button>
+
+    <script type="module" src="app.js"></script>
   </body>
 </html>

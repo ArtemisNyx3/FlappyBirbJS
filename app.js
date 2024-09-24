@@ -1,25 +1,23 @@
-// import { Birb } from './birb';
+window.addEventListener('load', function () {
+  console.log('Loaded');
+  document.body.style.visibility = 'visible';
+  const canvas = document.querySelector('.gameWindow');
+  const ctx = canvas.getContext('2d');
 
-// // window.addEventListener('load', function () {
-// console.log('Loaded');
-// const canvas = document.querySelector('.gameWindow');
-// const ctx = canvas.getContext('2d');
+  const startbtn = this.document.querySelector('.startbtn');
+  console.log(startbtn);
 
-// class Game {
-//   constructor(width, height) {
-//     this.width = width;
-//     this.height = height;
-//     this.birb = new Birb(this);
-//   }
-//   update() {}
-//   draw() {
-//     this.birb.draw(ctx);
-//   }
-// }
+  startbtn.onclick = function () {
+    console.log('clicked');
+    init(canvas, ctx);
+  };
+  function init() {
+    console.log('init');
+    ctx.fillStyle = 'rgb(173, 216, 230)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-// const game = new Game(400, 600);
-// console.log(game);
-// // });
-function gameStart() {
-  console.log('here');
-}
+    // draw birb
+    // remove start button
+    document.body.removeChild(startbtn);
+  }
+});
