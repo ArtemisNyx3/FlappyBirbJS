@@ -1,5 +1,5 @@
 import { Game } from './game.js';
-import { Birb } from './birb.js';
+import { GameState } from './util.js';
 
 window.addEventListener('load', function () {
   document.body.style.visibility = 'visible';
@@ -14,9 +14,12 @@ window.addEventListener('load', function () {
     game.init();
   };
 
-  // function animate() {
-  //   game.draw();
-  //   requestAnimationFrame(animate);
-  // }
-  // animate();
+  function animate() {
+    console.log('Animate');
+    if (game.state === GameState.GAME) {
+      game.draw();
+      requestAnimationFrame(animate);
+    }
+  }
+  const animateInterval = setInterval(animate, 16.667);
 });
