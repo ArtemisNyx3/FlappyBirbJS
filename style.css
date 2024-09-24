@@ -6,7 +6,7 @@
   height: 600px;
   width: 400px;
   position: absolute;
-  /* border-radius: 10px; */
+  border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
   top: 50%;
   left: 50%;
@@ -43,18 +43,6 @@ body {
   transform: translate(0%, -20%);
 }
 
-.titleScreen {
-  background-color: rgb(107, 136, 145);
-  height: 600px;
-  width: 400px;
-  position: absolute;
-  /* border-radius: 10px; */
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .startbtn {
   /* Looks  */
   background-color: rgb(132, 50, 91);
@@ -64,6 +52,7 @@ body {
   cursor: pointer;
   width: 150px;
   height: 50px;
+  border-radius: 10px;
 
   /* center the div */
   position: fixed;
@@ -87,6 +76,7 @@ body {
   font-weight: 200;
   font-style: normal;
   font-size: 40px;
+  border-radius: 10px;
 }
 
 .startbtn:hover .btnfront {
