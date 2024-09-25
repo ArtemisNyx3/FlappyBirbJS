@@ -16,13 +16,13 @@ window.addEventListener('load', function () {
 
   function animate() {
     console.log('Animate');
+    window.requestAnimationFrame(animate);
     if (game.state === GameState.GAME) {
       game.ctx.clearRect(0, 0, game.width, game.height);
       game.update();
       game.draw();
-      requestAnimationFrame(animate);
     }
   }
-
-  const animateInterval = setInterval(animate, 1000 / 60);
+  window.requestAnimationFrame(animate);
+  console.log(game.state);
 });

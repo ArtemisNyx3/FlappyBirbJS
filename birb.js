@@ -7,9 +7,13 @@ export class Birb {
     this.y = 200;
   }
 
-  update() {}
+  update(input) {
+    if (input.includes('ArrowUp')) this.y -= 12;
+    this.y += 3;
+  }
   draw() {
-    this.game.ctx.fillStyle = 'rgb(0, 0, 0)';
+    //console.log('draw birb');
+    this.game.ctx.fillStyle = 'rgb(240, 0, 0)';
     this.game.ctx.fillRect(this.x, this.y, this.width, this.height);
   }
 }
