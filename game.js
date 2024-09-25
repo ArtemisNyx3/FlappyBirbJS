@@ -16,10 +16,16 @@ export class Game {
     // this.ctx.fillStyle = 'rgb(61, 201, 244)';
     // this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
     this.canvas.style.backgroundColor = 'rgb(61, 201, 244)';
-    this.state = GameState.GAME;
+    //this.state = GameState.GAME;
     // remove start button
     document.body.removeChild(startbtn);
-    console.log(this);
+    this.draw();
+    // wait 3 seconds
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve('resolved');
+      }, 2000);
+    });
   }
   update() {
     this.birb.update(this.input.keys);

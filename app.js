@@ -9,9 +9,12 @@ window.addEventListener('load', function () {
   );
 
   const startbtn = this.document.querySelector('.startbtn');
-  startbtn.onclick = function () {
+  startbtn.onclick = async function () {
     console.log('Start Game');
-    game.init();
+
+    const result = await game.init();
+    console.log(result);
+    game.state = GameState.GAME;
   };
 
   function animate() {
