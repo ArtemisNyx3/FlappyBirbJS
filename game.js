@@ -36,7 +36,7 @@ export class Game {
 
     for (let i = 0; i < this.pipes.length; i++) {
       if (this.pipes[i].x < 0) this.pipes.splice(this.pipes[i], 1);
-      else if (this.pipes[i].x < this.canvas / 2) Pipe.generatePipe(this);
+      //else if (this.pipes[i].x < this.canvas.width / 2) Pipe.generatePipe(this);
       else this.pipes[i].update();
     }
   }

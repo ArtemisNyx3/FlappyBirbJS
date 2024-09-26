@@ -26,8 +26,8 @@ export default class Pipe {
     //bottom pipe
     let temp1 = new Pipe(
       game.canvas.width - BIRB_SIZE,
-      game.canvas.height - height,
-      height - PIPE_GAP,
+      height + PIPE_GAP,
+      game.canvas.height - height - PIPE_GAP,
       game,
     );
     game.pipes.push(temp1);
