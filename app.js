@@ -1,5 +1,6 @@
 import { Game } from './game.js';
 import { GameState } from './util.js';
+import Pipe from './pipe.js';
 
 window.addEventListener('load', function () {
   document.body.style.visibility = 'visible';
@@ -18,10 +19,10 @@ window.addEventListener('load', function () {
   };
 
   function animate() {
-    console.log('Animate');
+    //console.log('Animate');
     window.requestAnimationFrame(animate);
     if (game.state === GameState.GAME) {
-      game.ctx.clearRect(0, 0, game.width, game.height);
+      game.ctx.clearRect(0, 0, game.canvas.width, game.canvas.height);
       game.update();
       game.draw();
     }

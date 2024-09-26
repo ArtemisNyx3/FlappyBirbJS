@@ -1,10 +1,10 @@
-import { BIRB_X, GRAVITY, JUMP } from './util';
+import { BIRB_SIZE, BIRB_X, GRAVITY, JUMP } from './util.js';
 
 export class Birb {
   constructor(game) {
     this.game = game;
-    this.width = 40;
-    this.height = 40;
+    this.width = BIRB_SIZE;
+    this.height = BIRB_SIZE;
     this.x = BIRB_X;
     this.y = 200;
   }
